@@ -22,6 +22,23 @@ improve the results?
 To generate data for the report, you are expected to use the ‘leave one out’ cross validation approach. This will allow you to compute the mean absolute error across the entire dataset for any single algorithm/parameter combination.
 Repeating the experiments for this assignment will involve quite a bit of computation. It may be worth spending some time improving the runtime complexity of your implementation before running the experiments. Look for values you can precompute and reuse/modify to avoid excessive amounts of unnecessary computation. Start your experiments early so you have time to investigate the two algorithms and different parameters.
 
+# Instructions
+(No extra libraries required):
+1. Cd into project directory
+2. Run python3 ./assignment2.py
+3. Review produced data in logs.txt, bestResults.txt, resultsByMae.txt, and resultsByRT.txt
+
+Files:
+ - assignment2.py - The code for the assignment.
+ - README.txt - this .txt file containing instructions and files list.
+ - d.bala101140962_a2.pdf - A .pdf file containing the actual assignment report detailing project structure, results, and findings.
+ - logs.txt - the output of relevant parameter information in the order that they are executed by the program.
+ - resultsByMae.txt - the output of relevant parameter information sorted from best-to-worst MAE.
+ - resultsByRT.txt - the output of relevant parameter information sorted from best-to-worst runtimes.
+ - bestResults.txt - the output of relevant parameter information sorted by two columns from best-to-worst runtimes and MAE. Practically the same as resultsByMae.txt.
+ - ./userBased - a folder containing the input and expected output .txt files from previous labs on user-based recommendation. Original files are modified from -1 to indicate unreviewed items to 0. (For testing purposes)
+ - ./itemBased - a folder containing the input and expected output .txt files from previous labs on item-based recommendation. Original files are modified from -1 to indicate unreviewed items to 0. (For testing purposes)
+
 # Report
 The structuring of the code of Assignment 2 primarily follows the structure and code of Labs 6 to 8. When first converting Lab 8 (Evaluating Recommender Systems) to Assignment 2, the following overall goals were identified:
 
